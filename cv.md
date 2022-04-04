@@ -2,7 +2,7 @@
 
 #### Contacts
 
-- **Mobile:** [+48-883-178-954](tel:+48883178954)
+- **Mobile:** +48-883-178-954
 - **E-mail:** [nargizaakun@gmail.com](mailto:nargizaakun@gmail.com)
 - **Telegram:** [nargizaakunova](https://t.me/nargizaakunova)
 - **Discord:** @Nargiza Akunova#8502
