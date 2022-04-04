@@ -79,12 +79,17 @@ A little bit of practicing in self-made projects based on courses I have taken, 
 #### Education
 
 **Programming Courses:**
+
 `2022` Rolling Scopes School JS FE (in progress)
+
 `2022` The Complete JavaScript Course 2021: From Zero to Expert! _by Jonas Schmedtmann_
+
 `2022` Build Responsive Real-World Websites with HTML and CSS _by Jonas Schmedtmann_
+
 `2022` The Git & Github Bootcamp _by Colt Steele_
 
 **Previous Education:**
+
 `2018-20`
 **European University of Lefke** International Relations MA, Cyprus. My thesis was titled _The Foreign Policy of the US and Russia in the Syrian Civil War (2011 - 2018)_.
 
@@ -94,4 +99,5 @@ A little bit of practicing in self-made projects based on courses I have taken, 
 #### English
 
 C1, IELTS test (July 27, 2018)
+
 **_Other Languages_**: Russian (proficient), Kyrgyz (native).
