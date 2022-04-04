@@ -1,7 +1,5 @@
 # Nargiza Akunova
 
----
-
 #### Contacts
 
 - **Mobile:** [+48-883-178-954](tel:+48883178954)
