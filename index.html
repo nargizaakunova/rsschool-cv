@@ -6,6 +6,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My CV</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Goggle Fonts (Jost)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="top-menu">
+        <a
+          href="javascript:void(0);"
+          class="hamburger"
+          onclick="toggleNavbar(event)"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+
+        <nav class="navbar" id="navbar">
+          <a href="#home" class="navbar-link">
+            <img src="images/home2.png" alt="Main menu" class="home-image" />
+          </a>
+          <a href="#contacts" class="navbar-link">Contacts</a>
+          <a href="#summary" class="navbar-link">Summary</a>
+          <a href="#skills" class="navbar-link">Skills</a>
+          <a href="#code-examples" class="navbar-link">Code Examples</a>
+          <a href="#experience" class="navbar-link">Experience</a>
+          <a href="#education" class="navbar-link">Education</a>
+          <a href="#english" class="navbar-link">English</a>
+        </nav>
+      </div>
+      <div id="home"></div>
+      <h1 class="heading">JavaScript Developer</h1>
+      <img src="images/woman3.jpg" alt="Me coding" class="person-img" />
+      <h3 class="person-name">Nargiza Akunova</h3>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section id="contacts" class="main-section">
+        <div class="wrapper">
+          <h2 class="main-heading">Contacts</h2>
+          <ul>
+            <li>
+              <i class="fa fa-mobile"></i>
+              Mobile: +48-883-178-954
+            </li>
+            <li>
+              <i class="fa fa-at"></i>
+              <a href="mailto:nargizaakun@gmail.com"
+                >E-mail: nargizaakun@gmail.com</a
+              >
+            </li>
+            <li>
+              <i class="fa-brands fa-telegram"></i>
+              <a href="https://telegram.me/nargizaakunova"
+                >Telegram: nargizaakunova</a
+              >
+            </li>
+            <li>
+              <i class="fa-brands fa-discord"></i>
+              Discord: @Nargiza Akunova#8502
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="summary" class="main-section">
+        <div class="wrapper-rectangular">
+          <h2 class="main-heading">Summary</h2>
+          <blockquote>
+            I am an aspiring Junior JavaScript Front-End Developer with a load
+            of determination and strong eager to learn. I gain the most
+            satisfaction from work and experience when I am able to develop and
+            meet organization’s goals and customers’ expectations. I enjoy
+            solving problems by exploring solutions and writing quality
+            software, preferably leveraging modern programming languages, agile
+            development practices, and mastering skills.
+          </blockquote>
+        </div>
+      </section>
+      <section id="skills" class="main-section">
+        <h2 class="main-heading">Skills</h2>
+        <p>
+          Good knowledge of HTML, CSS, JavaScript, and Git & GitHub,
+          acquaintance with Angular, SASS, and TypeScript.
+        </p>
+      </section>
+      <section id="code-examples" class="main-section">
+        <h2 class="main-heading">Code Examples</h2>
+        <img
+          src="images/Screenshot.png"
+          alt="My code in JavaScript"
+          class="code-example"
+        />
+      </section>
+      <section id="experience" class="main-section">
+        <h2 class="main-heading">Experience</h2>
+        <p>
+          A little bit of practicing in self-made projects based on courses I
+          have taken, primarily front-end.
+        </p>
+      </section>
+      <section id="education" class="main-section">
+        <h2 class="main-heading">Education</h2>
+        <p>Programming Courses:</p>
+        <ul>
+          <li>2022 Rolling Scopes School JS FE (in progress)</li>
+          <li>
+            2022 The Complete JavaScript Course 2021: From Zero to Expert! by
+            Jonas Schmedtmann
+          </li>
+          <li>
+            2022 Build Responsive Real-World Websites with HTML and CSS by Jonas
+            Schmedtmann
+          </li>
+          <li>2022 The Git & Github Bootcamp by Colt Steele</li>
+        </ul>
+        <p>Previous Education:</p>
+        <ul>
+          <li>
+            2018-20 European University of Lefke International Relations MA,
+            Cyprus. My thesis was titled The Foreign Policy of the US and Russia
+            in the Syrian Civil War (2011 - 2018).
+          </li>
+          <li>
+            2011-18 Kyrgyz National Conservatory Diploma in Performing Arts,
+            Violin, and Orchestra
+          </li>
+        </ul>
+      </section>
+      <section id="english" class="main-section english">
+        <h2 class="main-heading">English</h2>
+        <p>C1, IELTS test (July 27, 2018)</p>
+        <p>Other Languages: Russian (proficient), Kyrgyz (native).</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+      <a href="https://github.com/nargizaakunova">
+        <img
+          src="images/GitHub-Mark-Light-32px.png"
+          alt="Github icon"
+          class="github-icon"
+        />
+      </a>
+
+      <p class="copyright">© 2022 Nargiza Akunova</p>
+
+      <a href="https://rs.school/js-en/">
+        <img
+          class="rs-course"
+          src="images/rs_school_js.svg"
+          alt="JS RS Course"
+        />
+      </a>
+    </footer>
+  </body>
 </html>
