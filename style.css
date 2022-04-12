@@ -1,0 +1,291 @@
+/* Common styles and reset*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  font-size: 62.5%;
+  --red: #e46161;
+  --yellowish: #f1b963;
+  --beige: #f8f398;
+  --green: #cbf078;
+  --gray: #2f4f4f;
+}
+
+/* Header */
+header {
+  height: 100vh;
+  background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 70%)),
+    url(images/header-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header .top-menu {
+  position: fixed;
+  width: 100%;
+}
+
+header .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  background-color: var(--red);
+}
+
+header .navbar .home-image {
+  border-radius: 50%;
+  width: 2.8rem;
+}
+
+header .navbar-link {
+  color: #f8f398;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.3rem;
+}
+
+header .heading {
+  font-size: 4rem;
+  color: #f8f398;
+  background-color: var(--red);
+  padding: 0.4rem;
+  margin-top: 15rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  border-bottom: 0.2rem solid #f8f398;
+  text-align: center;
+}
+
+header .person-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+header .person-name {
+  font-size: 3rem;
+  color: var(--red);
+  background-color: #f8f398;
+  margin: 3rem auto 5rem;
+  padding: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+
+header .hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 770px) {
+  header .navbar-link {
+    width: 100%;
+    text-decoration: underline;
+    /* border-bottom: 0.1rem solid rgb(255, 255, 255); */
+  }
+
+  header .navbar {
+    display: none;
+  }
+
+  header .navbar.shown {
+    display: flex;
+    background-color: #e46161af;
+  }
+
+  header .hamburger {
+    display: block;
+    font-size: 3rem;
+    color: var(--gray);
+    text-align: right;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 0.4rem;
+  }
+
+  header .heading {
+    font-size: 3rem;
+    display: inline;
+    width: 28rem;
+    margin: 10rem auto 3rem;
+  }
+}
+
+/* Header ends here  */
+
+/* Sections */
+#contacts,
+#experience {
+  background-color: var(--beige);
+}
+
+#summary,
+#code-examples,
+#english {
+  background-color: var(--green);
+}
+
+#skills {
+  background-color: var(--yellowish);
+}
+
+#education {
+  padding-top: 0;
+}
+
+#skills,
+#experience,
+#english {
+  padding: 0 4rem;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--gray);
+  text-align: center;
+}
+
+.section:last-child {
+  max-height: calc(100vh - 10.4rem);
+}
+
+@media (min-width: 771px) {
+  .section {
+    padding-top: 70px;
+  }
+}
+
+.section .main-heading {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.section a:link,
+.section a:visited {
+  color: var(--gray);
+}
+
+.section a:hover,
+.section a:active {
+  color: var(--red);
+}
+
+.code-example {
+  max-width: 80%;
+}
+
+.circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.8rem dashed #e46161;
+  box-shadow: 0rem -6rem #cbf078;
+  background-color: #cbf07863;
+  min-width: 36rem;
+  min-height: 36rem;
+}
+
+.wrapper-rectangular {
+  text-align: center;
+  max-width: 36rem;
+  background-color: var(--beige);
+  border-radius: 2rem;
+  padding: 3em;
+}
+
+.row {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.row .left,
+.row .right {
+  flex-basis: 50%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.row .left {
+  background: #f0ab8d;
+}
+
+.row .right {
+  background: antiquewhite;
+}
+
+.row li {
+  margin-bottom: 12px;
+}
+
+.row h3 {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 770px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Footer  */
+.footer-container {
+  display: flex;
+  background-color: var(--red);
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 0.6rem;
+}
+
+.footer-container .rs-course {
+  width: 3.8rem;
+}
+
+.footer-container .copyright {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--beige);
+}
+
+.footer-container .github-icon {
+  width: 2.4rem;
+}
+
+/* Footer ends here  */
