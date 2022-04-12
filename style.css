@@ -21,10 +21,9 @@
 
 /* Header */
 header {
-  width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgb(0 0 0 / 30%), rgb(0 0 0 / 70%)),
-    url(images/amy-hirschi-szrJ3wjzOMg-unsplash.jpg);
+    url(images/header-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -48,7 +47,7 @@ header .navbar {
   width: 100%;
   background-color: var(--red);
 }
-.navbar .home-image {
+header .navbar .home-image {
   border-radius: 50%;
   width: 2.8rem;
 }
@@ -125,45 +124,11 @@ header .hamburger {
     width: 28rem;
     margin: 10rem auto 3rem;
   }
-  .row {
-    flex-direction: column;
-  }
 }
+
 /* Header ends here  */
-/* main #english {
-  height: 90vh;
-} */
 
-/* Main */
-main .main-section {
-  width: 100%;
-  height: 100vh;
-  font-size: 1.8rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  color: var(--gray);
-  text-align: center;
-}
-
-main .main-section:last-child {
-  max-height: calc(100vh - 10.4rem);
-}
-
-@media (min-width: 771px) {
-  main .main-section {
-    padding-top: 70px;
-  }
-}
-
-main .main-heading {
-  font-weight: 600;
-  font-size: 3rem;
-}
-
-/* Sections colors */
+/* Sections */
 #contacts,
 #experience {
   background-color: var(--beige);
@@ -179,10 +144,58 @@ main .main-heading {
 #education {
   padding-top: 0;
 }
+
+#skills,
+#experience,
+#english {
+  padding: 0 4rem;
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--gray);
+  text-align: center;
+}
+
+.section:last-child {
+  max-height: calc(100vh - 10.4rem);
+}
+
+@media (min-width: 771px) {
+  .section {
+    padding-top: 70px;
+  }
+}
+
+.section .main-heading {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.section a:link {
+  color: var(--gray);
+}
+.section a:hover {
+  color: var(--red);
+}
+.section a:active {
+  color: var(--red);
+}
+.section a:visited {
+  color: var(--gray);
+}
+
 .code-example {
   max-width: 80%;
 }
-main .circle-wrapper {
+.circle-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -197,26 +210,7 @@ main .circle-wrapper {
   min-height: 36rem;
 }
 
-.main-section a:link {
-  color: var(--gray);
-}
-.main-section a:hover {
-  color: var(--red);
-}
-.main-section a:active {
-  color: var(--red);
-}
-.main-section a:visited {
-  color: var(--gray);
-}
-
-#skills,
-#experience,
-#english {
-  padding: 0 4rem;
-}
-
-.main-section .wrapper-rectangular {
+.wrapper-rectangular {
   text-align: center;
   max-width: 36rem;
   background-color: var(--beige);
@@ -262,6 +256,12 @@ main .circle-wrapper {
 }
 .row h3 {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 770px) {
+  .row {
+    flex-direction: column;
+  }
 }
 
 /* Main ends here */

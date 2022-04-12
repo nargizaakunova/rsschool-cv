@@ -7,9 +7,9 @@ function toggleNavbar(event) {
   }
 }
 
-// Close navbar in mobile when scrolling
 function close() {
   navbar.classList.remove("shown");
 }
 
+// Close navbar in mobile when choosing any menu item
 document.addEventListener("click", close);
