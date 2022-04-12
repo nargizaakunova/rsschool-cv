@@ -231,18 +231,7 @@ header .hamburger {
   flex-direction: row;
 }
 
-.row .left {
-  background: #f0ab8d;
-  flex-basis: 50%;
-  height: 100%;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: auto;
-  padding-left: 20px;
-}
-
+.row .left,
 .row .right {
   flex-basis: 50%;
   height: 100%;
@@ -250,8 +239,16 @@ header .hamburger {
   display: flex;
   flex-direction: column;
   text-align: left;
-  background: antiquewhite;
   padding-left: 20px;
+  width: 100%;
+}
+
+.row .left {
+  background: #f0ab8d;
+}
+
+.row .right {
+  background: antiquewhite;
 }
 
 .row li {
