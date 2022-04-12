@@ -47,6 +47,7 @@ header .navbar {
   width: 100%;
   background-color: var(--red);
 }
+
 header .navbar .home-image {
   border-radius: 50%;
   width: 2.8rem;
@@ -99,6 +100,7 @@ header .hamburger {
     text-decoration: underline;
     /* border-bottom: 0.1rem solid rgb(255, 255, 255); */
   }
+
   header .navbar {
     display: none;
   }
@@ -133,14 +135,17 @@ header .hamburger {
 #experience {
   background-color: var(--beige);
 }
+
 #summary,
 #code-examples,
 #english {
   background-color: var(--green);
 }
+
 #skills {
   background-color: var(--yellowish);
 }
+
 #education {
   padding-top: 0;
 }
@@ -179,22 +184,20 @@ header .hamburger {
   font-size: 3rem;
 }
 
-.section a:link {
-  color: var(--gray);
-}
-.section a:hover {
-  color: var(--red);
-}
-.section a:active {
-  color: var(--red);
-}
+.section a:link,
 .section a:visited {
   color: var(--gray);
+}
+
+.section a:hover,
+.section a:active {
+  color: var(--red);
 }
 
 .code-example {
   max-width: 80%;
 }
+
 .circle-wrapper {
   display: flex;
   flex-direction: column;
@@ -254,6 +257,7 @@ header .hamburger {
 .row li {
   margin-bottom: 12px;
 }
+
 .row h3 {
   font-weight: 600;
 }
@@ -263,8 +267,6 @@ header .hamburger {
     flex-direction: column;
   }
 }
-
-/* Main ends here */
 
 /* Footer  */
 .footer-container {
