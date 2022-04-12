@@ -125,6 +125,9 @@ header .hamburger {
     width: 28rem;
     margin: 10rem auto 3rem;
   }
+  .row {
+    flex-direction: column;
+  }
 }
 /* Header ends here  */
 /* main #english {
@@ -142,6 +145,17 @@ main .main-section {
   flex-direction: column;
   gap: 2rem;
   color: var(--gray);
+  text-align: center;
+}
+
+main .main-section:last-child {
+  max-height: calc(100vh - 10.4rem);
+}
+
+@media (min-width: 771px) {
+  main .main-section {
+    padding-top: 70px;
+  }
 }
 
 main .main-heading {
@@ -159,15 +173,16 @@ main .main-heading {
 #english {
   background-color: var(--green);
 }
-#skills,
-#education {
+#skills {
   background-color: var(--yellowish);
 }
-
+#education {
+  padding-top: 0;
+}
 .code-example {
   max-width: 80%;
 }
-main .wrapper {
+main .circle-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -176,10 +191,10 @@ main .wrapper {
   align-items: center;
   border-radius: 50%;
   border: 0.8rem dashed #e46161;
-  box-shadow: 2rem 0rem #cbf078;
+  box-shadow: 0rem -6rem #cbf078;
   background-color: #cbf07863;
-  min-width: 34rem;
-  min-height: 34rem;
+  min-width: 36rem;
+  min-height: 36rem;
 }
 
 .main-section a:link {
@@ -197,18 +212,58 @@ main .wrapper {
 
 #skills,
 #experience,
-#education,
 #english {
   padding: 0 4rem;
 }
 
 .main-section .wrapper-rectangular {
   text-align: center;
-  width: 35rem;
+  max-width: 36rem;
   background-color: var(--beige);
   border-radius: 2rem;
   padding: 3em;
 }
+
+.row {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.row .left {
+  background: #f0ab8d;
+  flex-basis: 50%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.row .right {
+  flex-basis: 50%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: antiquewhite;
+  padding-left: 20px;
+}
+
+.row li {
+  margin-bottom: 12px;
+}
+.row h3 {
+  font-weight: 600;
+}
+
 /* Main ends here */
 
 /* Footer  */
