@@ -34,26 +34,36 @@
         </a>
 
         <nav class="navbar" id="navbar">
-          <a href="#home" class="navbar-link">
-            <img
-              src="images/home-icon.png"
-              alt="Main menu"
-              class="home-image"
-            />
-          </a>
-          <a href="#contacts" class="navbar-link">Contacts</a>
-          <a href="#summary" class="navbar-link">Summary</a>
-          <a href="#skills" class="navbar-link">Skills</a>
-          <a href="#code-examples" class="navbar-link">Code Examples</a>
-          <a href="#experience" class="navbar-link">Experience</a>
-          <a href="#education" class="navbar-link">Education</a>
-          <a href="#english" class="navbar-link">English</a>
+          <ul class="nav-list">
+            <li>
+              <a href="#home" class="navbar-link">
+                <img
+                  src="images/home-icon.png"
+                  alt="Main menu"
+                  class="home-image"
+                />
+              </a>
+            </li>
+            <li><a href="#contacts" class="navbar-link">Contacts</a></li>
+            <li><a href="#summary" class="navbar-link">Summary</a></li>
+            <li><a href="#skills" class="navbar-link">Skills</a></li>
+            <li>
+              <a href="#code-examples" class="navbar-link">Code Examples</a>
+            </li>
+            <li><a href="#experience" class="navbar-link">Experience</a></li>
+            <li><a href="#education" class="navbar-link">Education</a></li>
+            <li><a href="#english" class="navbar-link">English</a></li>
+          </ul>
         </nav>
       </div>
       <div id="home"></div>
       <h1 class="heading">JavaScript Developer</h1>
-      <img src="images/woman.jpg" alt="Me coding" class="person-img" />
-      <h3 class="person-name">Nargiza Akunova</h3>
+      <img
+        src="images/woman.jpg"
+        alt="Woman's profile picture"
+        class="person-img"
+      />
+      <h2 class="person-name">Nargiza Akunova</h2>
     </header>
 
     <!-- Main -->
@@ -68,13 +78,13 @@
             </li>
             <li>
               <i class="fa fa-at"></i>
-              <a href="mailto:nargizaakun@gmail.com"
+              <a href="mailto:nargizaakun@gmail.com" target="_blank"
                 >E-mail: nargizaakun@gmail.com</a
               >
             </li>
             <li>
               <i class="fa-brands fa-telegram"></i>
-              <a href="https://telegram.me/nargizaakunova"
+              <a href="https://telegram.me/nargizaakunova" target="_blank"
                 >Telegram: nargizaakunova</a
               >
             </li>
@@ -88,7 +98,7 @@
       <section id="summary" class="section">
         <div class="wrapper-rectangular">
           <h2 class="main-heading">Summary</h2>
-          <blockquote>
+          <p>
             I am an aspiring Junior JavaScript Front-End Developer with a load
             of determination and strong eager to learn. I gain the most
             satisfaction from work and experience when I am able to develop and
@@ -96,15 +106,17 @@
             solving problems by exploring solutions and writing quality
             software, preferably leveraging modern programming languages, agile
             development practices, and mastering skills.
-          </blockquote>
+          </p>
         </div>
       </section>
       <section id="skills" class="section">
         <h2 class="main-heading">Skills</h2>
-        <p>
-          Good knowledge of HTML, CSS, JavaScript, and Git & GitHub,
-          acquaintance with Angular, SASS, and TypeScript.
-        </p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git & GitHub</li>
+        </ul>
       </section>
       <section id="code-examples" class="section">
         <h2 class="main-heading">Code Examples</h2>
@@ -120,41 +132,57 @@
           A little bit of practicing in self-made projects based on courses I
           have taken, primarily front-end.
         </p>
+        <ul>
+          <li class="experience-list">
+            <a
+              href="https://github.com/nargizaakunova/rsschool-cv/tree/rsschool-cv-html"
+              target="_blank"
+              >CV source code
+            </a>
+          </li>
+          <li class="experience-list">
+            <a
+              href="https://nargizaakunova.github.io/CSS-My-Site/"
+              target="_blank"
+              >Another CV
+            </a>
+          </li>
+        </ul>
       </section>
       <section id="education" class="section">
         <div class="row">
           <div class="left">
             <h3>Programming Courses:</h3>
             <ul>
-              <li>2022 Rolling Scopes School JS FE (in progress)</li>
+              <li><b>2022</b> Rolling Scopes School JS FE (in progress)</li>
               <li>
-                2022 The Complete JavaScript Course 2021: From Zero to Expert!
-                by Jonas Schmedtmann
+                <b>2022</b> The Complete JavaScript Course 2021: From Zero to
+                Expert! by Jonas Schmedtmann
               </li>
               <li>
-                2022 Build Responsive Real-World Websites with HTML and CSS by
-                Jonas Schmedtmann
+                <b>2022</b> Build Responsive Real-World Websites with HTML and
+                CSS by Jonas Schmedtmann
               </li>
-              <li>2022 The Git & Github Bootcamp by Colt Steele</li>
+              <li><b>2022</b> The Git & Github Bootcamp by Colt Steele</li>
             </ul>
           </div>
           <div class="right">
             <h3>Previous Education:</h3>
             <ul>
               <li>
-                2018-20 European University of Lefke International Relations MA,
-                Cyprus. My thesis was titled The Foreign Policy of the US and
-                Russia in the Syrian Civil War (2011 - 2018).
+                <b>2018-20</b> European University of Lefke International
+                Relations MA, Cyprus. My thesis was titled The Foreign Policy of
+                the US and Russia in the Syrian Civil War (2011 - 2018).
               </li>
               <li>
-                2011-18 Kyrgyz National Conservatory Diploma in Performing Arts,
-                Violin, and Orchestra
+                <b>2011-18</b> Kyrgyz National Conservatory Diploma in
+                Performing Arts, Violin, and Orchestra
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section id="english" class="section english">
+      <section id="english" class="section">
         <h2 class="main-heading">English</h2>
         <p>C1, IELTS test (July 27, 2018)</p>
         <p>Other Languages: Russian (proficient), Kyrgyz (native).</p>
@@ -171,7 +199,7 @@
         />
       </a>
 
-      <p class="copyright">© 2022 Nargiza Akunova</p>
+      <p class="copyright">© April 2022 Nargiza Akunova</p>
 
       <a href="https://rs.school/js-en/" target="_blank">
         <img
